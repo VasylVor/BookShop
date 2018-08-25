@@ -22,9 +22,9 @@ namespace WebUi.HtmlHelpers
                 if(i == pagingInfo.CurrentPage)
                 {
                     tag.AddCssClass("selected");
-                    tag.AddCssClass("btn-primary");
+                    tag.AddCssClass("btn btn-primary");
                 }
-                tag.AddCssClass("btn-default");
+                tag.AddCssClass("btn btn-default");
                 result.Append(tag.ToString());
 
             }

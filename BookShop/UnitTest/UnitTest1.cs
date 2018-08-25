@@ -1,14 +1,14 @@
-﻿using System;
-using DomainBookShop.Abstract;
-using Moq;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Collections.Generic;
+﻿using DomainBookShop.Abstract;
 using DomainBookShop.Entities;
-using WebUi.Controllers;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Moq;
+using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
-using WebUi.Models;
+using WebUi.Controllers;
 using WebUi.HtmlHelpers;
+using WebUi.Models;
 
 namespace UnitTest
 {
@@ -60,9 +60,9 @@ namespace UnitTest
             MvcHtmlString result = myHelper.PageLinks(pagingInfo, pageUrlDlegate);
 
             //confirmation
-            Assert.AreEqual(@"<a class=""btn-default"" href=""Page1"">1</a>"
-                + @"<a class=""btn-default btn-primary selected"" href=""Page2"">2</a>"
-                + @"<a class=""btn-default"" href=""Page3"">3</a>",
+            Assert.AreEqual(@"<a class=""btn btn-default"" href=""Page1"">1</a>"
+                + @"<a class=""btn btn-default btn btn-primary selected"" href=""Page2"">2</a>"
+                + @"<a class=""btn btn-default"" href=""Page3"">3</a>",
                 result.ToString());
         }
 
