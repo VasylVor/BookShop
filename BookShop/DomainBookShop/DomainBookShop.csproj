@@ -72,6 +72,7 @@
     <Compile Include="Concrete\BookDbRepository.cs" />
     <Compile Include="Concrete\BooksDbContext.cs" />
     <Compile Include="Entities\Book.cs" />
+    <Compile Include="Entities\Cart.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
